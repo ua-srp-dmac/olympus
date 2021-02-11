@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card } from 'semantic-ui-react';
+import { Button, Card, Image, Icon } from 'semantic-ui-react';
 
 class Landing extends Component {
 
@@ -17,20 +17,78 @@ class Landing extends Component {
 
     return (
       <>
-        <h2>Hi Michelle!</h2>
-        <Card.Group itemsPerRow={6}>
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
-          <Card raised image={src} />
+        <h2>Apps</h2>
+        <Card.Group itemsPerRow={3}>
+          <Card raised image={src}>
+            <Image src={src} wrapped ui={false} />
+            <Card.Content>
+              <Card.Header>Ares</Card.Header>
+              <Card.Meta>
+                {/* <span className='date'>Joined in 2015</span> */}
+              </Card.Meta>
+              <Card.Description>
+                Visualize genomic data.
+              </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Button>Launch</Button>
+              </a>
+            </Card.Content>
+          </Card>
+
+          <Card raised image={src}>
+            <Image src={src} wrapped ui={false} />
+            <Card.Content>
+              <Card.Header>Demeter</Card.Header>
+              <Card.Meta>
+                {/* <span className='date'>Joined in 2015</span> */}
+              </Card.Meta>
+              <Card.Description>
+                Launch nextGen sequencing analysis.
+              </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Button>Launch</Button>
+              </a>
+            </Card.Content>
+          </Card>
+
+          <Card raised image={src}>
+            <Image src={src} wrapped ui={false} />
+            <Card.Content>
+              <Card.Header>App Name</Card.Header>
+              <Card.Meta>
+                {/* <span className='date'>Joined in 2015</span> */}
+              </Card.Meta>
+              <Card.Description>
+                App description.
+              </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Button>Launch</Button>
+              </a>
+            </Card.Content>
+          </Card>
+          <Card raised image={src}>
+            <Image src={src} wrapped ui={false} />
+            <Card.Content>
+              <Card.Header>App Name</Card.Header>
+              <Card.Meta>
+                {/* <span className='date'>Joined in 2015</span> */}
+              </Card.Meta>
+              <Card.Description>
+                App description.
+              </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Button>Launch</Button>
+              </a>
+            </Card.Content>
+          </Card>
         </Card.Group>
       </>
     );
