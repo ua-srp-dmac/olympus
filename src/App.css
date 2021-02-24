@@ -6,3 +6,21 @@
   padding-top: 100px;
   padding-left: 20px;
 }
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+.centered {
+  margin: auto;
+  text-align: center;
+}
+
