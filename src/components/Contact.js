@@ -30,7 +30,7 @@ class Contact extends Component {
                 <Grid.Column>
                   <Header icon>
                     <Icon name='question circle outline' />
-                    Need help with CyVerse or apps?
+                    Need help with apps or CyVerse?
                   </Header>
 
                   <div><a href="https://dmac.pharmacy.arizona.edu/Forum/" target="_blank">Visit the Discussion Forum</a></div>
@@ -54,33 +54,57 @@ class Contact extends Component {
         
         <Divider></Divider>
         <div className="p-t-20 p-b-20">
-          <h3 className="p-b-30 centered">The DMAC Team</h3>
+          <h2 className="p-b-50 centered">Meet the DMAC Team</h2>
           <Grid columns={2} divided>
             <Grid.Row>
-            <Grid.Column>
-              <Grid>
-                <Grid.Column width={6}>
-                  <Image src='aikseng.png' size='small' circular />
-                </Grid.Column>
-                <Grid.Column width={10}>
-                  <h2>Aikseng Ooi</h2>
-                  <p>DMAC Lead Investigator</p>
-                </Grid.Column>
-              </Grid>
-            </Grid.Column>
-
+              <Grid.Column>
+                <Grid>
+                  <Grid.Column width={6}>
+                    <Image src='aikseng.png' size='small' circular />
+                  </Grid.Column>
+                  <Grid.Column width={10}>
+                    <h3>Aikseng Ooi</h3>
+                    <p>Principal Investigator</p>
+                  </Grid.Column>
+                </Grid>
+              </Grid.Column>
 
               <Grid.Column>
-                <Image src='nirav.png' size='small' circular />
+                <Grid>
+                  <Grid.Column width={6}>
+                    <Image src='nirav.png' size='small' circular />
+                  </Grid.Column>
+                  <Grid.Column width={10}>
+                    <h3>Nirav Merchant</h3>
+                    <p>Co-Investigator</p>
+                  </Grid.Column>
+                </Grid>
               </Grid.Column>
+
             </Grid.Row>
 
             <Grid.Row>
               <Grid.Column>
-                <Image src='anthony.png' size='small' circular />
+                <Grid>
+                  <Grid.Column width={6}>
+                    <Image src='anthony.png' size='small' circular />
+                  </Grid.Column>
+                  <Grid.Column width={10}>
+                    <h3>Anthony Vicenti</h3>
+                    <p>Statistician & Computational Biologist</p>
+                  </Grid.Column>
+                </Grid>
               </Grid.Column>
               <Grid.Column>
-                  <Image src='michelle.png' size='small' circular />
+                <Grid>
+                  <Grid.Column width={6}>
+                    <Image src='michelle.png' size='small' circular />
+                  </Grid.Column>
+                  <Grid.Column width={10}>
+                    <h3>Michelle Yung</h3>
+                    <p>Software Engineer</p>
+                  </Grid.Column>
+                </Grid>
               </Grid.Column>
             </Grid.Row>
           </Grid>

@@ -22,13 +22,21 @@ class App extends Component {
         <header className="App-header">
           <Menu fixed='top' inverted className="raised-menu">
             <Container>
-              <Menu.Item as='a' header>
+              <Menu.Item as='a' href="/" header>
                 <h1>olympus</h1>
               </Menu.Item>
-              <Menu.Item as='a' href="/"><h4>Home</h4></Menu.Item>
-              <Menu.Item as='a' href="/contact"><h4>Contact Us</h4></Menu.Item>
-              <Menu.Item as='a' href="https://dmac.pharmacy.arizona.edu/Forum/" target="_blank"><h4>Forum</h4></Menu.Item>
-              {this.state.loggedIn && <Menu.Item as='a' onClick={this.logout}><h4>Logout</h4></Menu.Item>}
+              <Menu.Item as='a' href="/">
+                <h4>Home</h4>
+              </Menu.Item>
+              <Menu.Item as='a' href="/contact">
+                <h4>Contact Us</h4>
+              </Menu.Item>
+              <Menu.Item as='a' href="https://dmac.pharmacy.arizona.edu/Forum/" target="_blank">
+                <h4>Forum</h4>
+              </Menu.Item>
+              <Menu.Item as='a' href="https://www.youtube.com/channel/UC_ETGk9VJU_XPL6OcUjynbw/featured" target="_blank">
+                <h4>YouTube</h4>
+              </Menu.Item>
             </Container>
           </Menu>
         </header>
