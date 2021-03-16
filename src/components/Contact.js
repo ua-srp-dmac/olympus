@@ -57,20 +57,30 @@ class Contact extends Component {
           <h3 className="p-b-30 centered">The DMAC Team</h3>
           <Grid columns={2} divided>
             <Grid.Row>
+            <Grid.Column>
+              <Grid>
+                <Grid.Column width={6}>
+                  <Image src='aikseng.png' size='small' circular />
+                </Grid.Column>
+                <Grid.Column width={10}>
+                  <h2>Aikseng Ooi</h2>
+                  <p>DMAC Lead Investigator</p>
+                </Grid.Column>
+              </Grid>
+            </Grid.Column>
+
+
               <Grid.Column>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-              </Grid.Column>
-              <Grid.Column>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
+                <Image src='nirav.png' size='small' circular />
               </Grid.Column>
             </Grid.Row>
 
             <Grid.Row>
               <Grid.Column>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
+                <Image src='anthony.png' size='small' circular />
               </Grid.Column>
               <Grid.Column>
-                  <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
+                  <Image src='michelle.png' size='small' circular />
               </Grid.Column>
             </Grid.Row>
           </Grid>

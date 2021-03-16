@@ -26,7 +26,7 @@ class App extends Component {
                 <h1>olympus</h1>
               </Menu.Item>
               <Menu.Item as='a' href="/"><h4>Home</h4></Menu.Item>
-              <Menu.Item as='a' href="/contact"><h4>Contact</h4></Menu.Item>
+              <Menu.Item as='a' href="/contact"><h4>Contact Us</h4></Menu.Item>
               <Menu.Item as='a' href="https://dmac.pharmacy.arizona.edu/Forum/" target="_blank"><h4>Forum</h4></Menu.Item>
               {this.state.loggedIn && <Menu.Item as='a' onClick={this.logout}><h4>Logout</h4></Menu.Item>}
             </Container>
