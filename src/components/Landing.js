@@ -23,7 +23,7 @@ class Landing extends Component {
         <div className="p-t-20">      
           <Card.Group itemsPerRow={3}>
             <Card raised image={src}>
-              <Image src="ares.png" wrapped ui={false} />
+              <Image src="ares_results.png" wrapped ui={false} />
               <Card.Content>
                 <Card.Header>Ares</Card.Header>
                 <Card.Meta>
@@ -44,7 +44,7 @@ class Landing extends Component {
             </Card>
 
             <Card raised image={src}>
-              <Image src="demeter.png" wrapped ui={false} />
+              <Image src="genomic_data.jpeg" wrapped ui={false} />
               <Card.Content>
                 <Card.Header>Demeter</Card.Header>
                 <Card.Meta>
@@ -65,7 +65,7 @@ class Landing extends Component {
             </Card>
 
             <Card raised image={src}>
-              <Image src="hermes.png" wrapped ui={false} />
+              <Image src="hermes_cnet.png" wrapped ui={false} />
               <Card.Content>
                 <Card.Header>Hermes</Card.Header>
                 <Card.Meta>
