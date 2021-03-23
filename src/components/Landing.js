@@ -55,7 +55,7 @@ class Landing extends Component {
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
-                <Button as="a" href="https://dmac.pharmacy.arizona.edu/demeter" target="_blank" floated="right" primary>
+                <Button as="a" href="https://demeter.pharmacy.arizona.edu" target="_blank" floated="right" primary>
                   Launch
                 </Button>
                 <Button as="a" floated="right">
