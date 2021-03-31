@@ -27,8 +27,28 @@
   margin-bottom: 30px;
 }
 
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-t-40 {
+  margin-top: 40px;
+}
+
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.m-b-40 {
+  margin-bottom: 40px;
+}
+
 .centered {
   margin: auto;
   text-align: center;
+}
+
+.landing {
+  font-size: medium;
 }
 

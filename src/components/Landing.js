@@ -17,9 +17,37 @@ class Landing extends Component {
 
     return (
       <>
-        {/* Welcome to the UA SRP DMAC home, where you can launch apps.
-        <Divider></Divider> */}
-        <h2 >Apps</h2>
+        <Image centered size='medium' src={"ua-logo.png"} as='a' href='https://www.superfund.arizona.edu/'/>
+        
+        <h1>Data Management & Analysis Core</h1>
+
+        <div className="m-t-40 landing">
+          <p>
+            The University of Arizona Superfund Research Center (UA SRC) generates volumes and types of data that are not manageable in traditional laboratory settings. The Data Management and Analysis Core (DMAC) functions as the primary service for UA SRC in large biological, geophysical, and chemical datasets, and enables investigators by performing three core functions:
+          </p>
+
+          <ul>
+            <li>
+              Leading the housing of all data within CyVerse, an easy-to-access data repository system.
+            </li>
+            <li>
+            Performing both standard and custom computational analyses of the data.
+            </li>
+            <li>
+              Developing a collection of user-friendly web applications that allows individual investigators to retrieve, manipliate, and visualize UA SRC data.
+            </li>   
+          </ul>
+        </div>
+        <div className="m-t-40 m-b-40">
+          <Button as="a" href="https://superfund.arizona.edu/cores/data-management-and-analysis-core" target="_blank">
+            Learn more
+          </Button>
+        </div>
+        
+        <Divider></Divider>
+
+        <h2>Apps</h2>
+
         <div className="p-t-20">      
           <Card.Group itemsPerRow={3}>
             <Card raised image={src}>
@@ -30,7 +58,7 @@ class Landing extends Component {
                   {/* <span className='date'>Joined in 2015</span> */}
                 </Card.Meta>
                 <Card.Description>
-                  Visualize genomic data.
+                  Differential gene expression analysis using DESeq2.
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>
@@ -72,7 +100,7 @@ class Landing extends Component {
                   {/* <span className='date'>Joined in 2015</span> */}
                 </Card.Meta>
                 <Card.Description>
-                  App description.
+                  Gene set enrichment and pathway analysis.
                 </Card.Description>
               </Card.Content>
               <Card.Content extra>

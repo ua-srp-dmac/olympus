@@ -16,6 +16,7 @@ class Contact extends Component {
 
     return (
       <>
+        <Image centered size='medium' src={"ua-logo.png"} as='a' href='https://www.superfund.arizona.edu/'/>
         {/* Welcome to the UA SRP DMAC home, where you can launch apps.
         <Divider></Divider> */}
         <h2>Contact Us</h2>
