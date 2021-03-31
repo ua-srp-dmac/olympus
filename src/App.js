@@ -60,21 +60,16 @@ class App extends Component {
               </Grid.Column>
             </Grid>
 
-            {/* <Divider section />
+            <Divider section hidden/>
+            
             <List horizontal divided link size='small'>
-              <List.Item as='a' href='#'>
-                Need help? Contact myung@email.arizona.edu
-              </List.Item>
-              <List.Item as='a' href='#'>
+              <List.Item as='a' href='/contact'>
                 Contact Us
               </List.Item>
-              <List.Item as='a' href='#'>
-                Terms and Conditions
+              <List.Item as='a' href='https://tools.niehs.nih.gov/portfolio/index.cfm/portfolio/grantDetail/grant_number/P42ES004940'>
+                Funded by NIEHS grant #P42ES004940
               </List.Item>
-              <List.Item as='a' href='#'>
-                Privacy Policy
-              </List.Item>
-            </List> */}
+            </List>
           </Container>
         </Segment>
       </div>
