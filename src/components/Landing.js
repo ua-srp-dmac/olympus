@@ -49,7 +49,7 @@ class Landing extends Component {
         <h2>Apps</h2>
 
         <div className="p-t-20">      
-          <Card.Group itemsPerRow={3}>
+          <Card.Group className="three fluid doubling stackable">
             <Card raised image={src}>
               <Image src="ares_results.png" wrapped ui={false} />
               <Card.Content>
