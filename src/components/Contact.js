@@ -11,8 +11,6 @@ class Contact extends Component {
   }
   
   render() {
-    
-    const src = "ares.png";
 
     return (
       <>
@@ -56,7 +54,7 @@ class Contact extends Component {
         <Divider></Divider>
         <div className="p-t-20 p-b-20">
           <h2 className="p-b-50 centered">Meet the DMAC Team</h2>
-          <Grid columns={2} divided>
+          <Grid stackable columns={2} divided>
             <Grid.Row>
               <Grid.Column>
                 <Grid>
