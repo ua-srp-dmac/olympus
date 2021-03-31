@@ -52,3 +52,10 @@
   font-size: medium;
 }
 
+@media screen and (max-width:768px) {
+  .contact-divider {
+      display: none !important;
+  }
+}
+
+

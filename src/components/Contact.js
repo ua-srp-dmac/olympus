@@ -17,16 +17,14 @@ class Contact extends Component {
     return (
       <>
         <Image centered size='medium' src={"ua-logo.png"} as='a' href='https://www.superfund.arizona.edu/'/>
-        {/* Welcome to the UA SRP DMAC home, where you can launch apps.
-        <Divider></Divider> */}
+
         <h2>Contact Us</h2>
-        
-        <div className="p-t-20 p-b-20"> 
+    
+        <div className="p-t-20 p-b-20">
 
           <Segment placeholder>
             <Grid columns={2} stackable textAlign='center'>
-              <Divider vertical>Or</Divider>
-
+              
               <Grid.Row verticalAlign='middle'>
                 <Grid.Column>
                   <Header icon>
@@ -36,6 +34,8 @@ class Contact extends Component {
 
                   <div><a href="https://dmac.pharmacy.arizona.edu/Forum/" target="_blank">Visit the Discussion Forum</a></div>
                 </Grid.Column>
+                
+                <Divider vertical className="contact-divider">Or</Divider>
 
                 <Grid.Column>
                   <Header icon>
