@@ -170,7 +170,7 @@ class Landing extends Component {
                 </p>
                 <Divider></Divider>
                 <h4>DNA Seq</h4>
-                <p>Runs <a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml" target="_blank">bowtie2</a> and <a href="http://www.htslib.org" target="_blank">samtools</a> to generate a sorted <code>.bam</code> and <code>.bai</code> file from <code>.fastq</code> files stored on CyVerse.</p>
+                <p>Runs <a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml" target="_blank">bowtie2</a> and <a href="http://www.htslib.org" target="_blank">samtools</a> to generate <code>.bam</code> and <code>.bai</code> files from DNA sequencing<code>.fastq</code> files stored on CyVerse.</p>
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>
