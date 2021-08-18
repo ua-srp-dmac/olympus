@@ -43,6 +43,10 @@
   margin-bottom: 40px;
 }
 
+.m-l-20 {
+  margin-left: 20px;
+}
+
 .centered {
   margin: auto;
   text-align: center;

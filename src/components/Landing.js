@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Card, Image, Segment, Divider, Modal, Header } from 'semantic-ui-react';
+import { Label } from 'semantic-ui-react'
 
 class Landing extends Component {
 
@@ -83,6 +84,35 @@ class Landing extends Component {
             </Card>
 
             <Card raised image={src}>
+              <Image src="artemis.png" wrapped ui={false} />
+              <Card.Content>
+                <Card.Header>
+                  Artemis <Label size="tiny" color="pink" floated="right">alpha</Label>
+                </Card.Header>
+                
+                <Card.Meta>
+                  {/* <span className='date'>Joined in 2015</span> */}
+                </Card.Meta>
+                <Card.Description>
+                  Visualize SRP data on an interactive map.
+                </Card.Description>
+                
+              </Card.Content>
+              <Card.Content extra>
+                <Button as="a"
+                        // href="https://dmac.pharmacy.arizona.edu/GeoUp/Develop/"
+                        target="_blank"
+                        floated="right"
+                        primary>
+                  Coming soon!
+                </Button>
+                <Button as="a" floated="right" onClick={() => this.setOpen(true, 'artemis')} >
+                  Info
+                </Button>
+              </Card.Content>
+            </Card>
+
+            <Card raised image={src}>
               <Image src="genomic_data.jpeg" wrapped ui={false} />
               <Card.Content>
                 <Card.Header>Demeter</Card.Header>
@@ -98,6 +128,31 @@ class Landing extends Component {
                   Launch
                 </Button>
                 <Button as="a" floated="right" onClick={() => this.setOpen(true, 'demeter')}>
+                  Info
+                </Button>
+              </Card.Content>
+            </Card>
+
+            <Card raised image={src}>
+              <Image src="hera.png" wrapped ui={false} />
+              <Card.Content>
+                <Card.Header>
+                  Hera  <Label size="tiny" color="pink" floated="right">alpha</Label>
+                </Card.Header>
+                
+                <Card.Meta>
+                  {/* <span className='date'>Joined in 2015</span> */}
+                </Card.Meta>
+                <Card.Description>
+                  Upload geochemical core sample data for visualization in Artemis.
+                </Card.Description>
+                
+              </Card.Content>
+              <Card.Content extra>
+                <Button as="a" href="https://dmac.pharmacy.arizona.edu/Hera/Home" target="_blank" floated="right" primary>
+                  Launch
+                </Button>
+                <Button as="a" floated="right" onClick={() => this.setOpen(true, 'hera')}>
                   Info
                 </Button>
               </Card.Content>
@@ -157,6 +212,28 @@ class Landing extends Component {
 
           <Modal
             onClose={() => this.setOpen(false, null)}
+            open={modalOpen && modalType === 'artemis'}
+            size="tiny"
+          > 
+            <Modal.Header>Artemis</Modal.Header>
+            <Modal.Content>
+              <Modal.Description>
+                <p>
+                  Visualize SRP data on an interactive map.
+                </p>
+
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button onClick={() => this.setOpen(false)}>
+                Close
+              </Button>
+              
+            </Modal.Actions>
+          </Modal>
+
+          <Modal
+            onClose={() => this.setOpen(false, null)}
             open={modalOpen && modalType === 'demeter'}
             size="tiny"
           > 
@@ -171,6 +248,28 @@ class Landing extends Component {
                 <Divider></Divider>
                 <h4>DNA Seq</h4>
                 <p>Runs <a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml" target="_blank">bowtie2</a> and <a href="http://www.htslib.org" target="_blank">samtools</a> to generate <code>.bam</code> and <code>.bai</code> files from DNA sequencing<code>.fastq</code> files stored on CyVerse.</p>
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button onClick={() => this.setOpen(false)}>
+                Close
+              </Button>
+              
+            </Modal.Actions>
+          </Modal>
+
+          <Modal
+            onClose={() => this.setOpen(false, null)}
+            open={modalOpen && modalType === 'hera'}
+            size="tiny"
+          > 
+            <Modal.Header>Hera</Modal.Header>
+            <Modal.Content>
+              <Modal.Description>
+                <p>
+                  Upload geochemical core sample data for visualization in Artemis.
+                </p>
+
               </Modal.Description>
             </Modal.Content>
             <Modal.Actions>
