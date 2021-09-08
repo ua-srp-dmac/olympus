@@ -100,11 +100,11 @@ class Landing extends Component {
               </Card.Content>
               <Card.Content extra>
                 <Button as="a"
-                        // href="https://dmac.pharmacy.arizona.edu/GeoUp/Develop/"
+                        href="https://artemis.pharmacy.arizona.edu"
                         target="_blank"
                         floated="right"
                         primary>
-                  Coming soon!
+                  Launch
                 </Button>
                 <Button as="a" floated="right" onClick={() => this.setOpen(true, 'artemis')} >
                   Info
