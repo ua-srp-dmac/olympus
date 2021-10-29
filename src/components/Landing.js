@@ -178,7 +178,30 @@ class Landing extends Component {
                 </Button>
               </Card.Content>
             </Card>
+
+            <Card raised image={src}>
+              <Image src="oracle.png" wrapped ui={false} />
+              <Card.Content>
+                <Card.Header>Oracle <Label size="tiny" color="pink" floated="right">alpha</Label></Card.Header> 
+                <Card.Meta>
+                  {/* <span className='date'>Joined in 2015</span> */}
+                </Card.Meta>
+                <Card.Description>
+                  Oracle uses a map of gene connections, inputted by users, to predict the effect of up-regualting/down-regulating one or more genes.
+                </Card.Description>
+              </Card.Content>
+              <Card.Content extra>
+                <Button as="a" href="https://dmac.pharmacy.arizona.edu/Oracle/Home" target="_blank" floated="right" primary>
+                  Launch
+                </Button>
+                <Button as="a" floated="right" onClick={() => this.setOpen(true, 'oracle')}>
+                  Info
+                </Button>
+              </Card.Content>
+            </Card>
           </Card.Group>
+
+          
 
           <Modal
             onClose={() => this.setOpen(false, null)}
@@ -289,7 +312,28 @@ class Landing extends Component {
             <Modal.Content>
               <Modal.Description>
                 <p>
-                  Hermes description.
+                  Gene set enrichment and pathway analysis.
+                </p>
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button onClick={() => this.setOpen(false)}>
+                Close
+              </Button>
+              
+            </Modal.Actions>
+          </Modal>
+
+          <Modal
+            onClose={() => this.setOpen(false, null)}
+            open={modalOpen && modalType === 'oracle'}
+            size="tiny"
+          > 
+            <Modal.Header>Oracle</Modal.Header>
+            <Modal.Content>
+              <Modal.Description>
+                <p>
+                  Oracle uses a map of gene connections, inputted by users, to predict the effect of up-regualting/down-regulating one or more genes.
                 </p>
               </Modal.Description>
             </Modal.Content>
